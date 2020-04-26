@@ -12,6 +12,7 @@ public class EventManager : MonoBehaviour
     public static bool numHasPower;
     public static bool hasKeyCard;
     public static bool squareSolved;
+    public static bool doorUnlocked;
 
     // Initialize variables that track player's progress.
     // In beginning, player has done nothing, so all should be
@@ -22,9 +23,10 @@ public class EventManager : MonoBehaviour
         fuseOpen = false;
         laptopOn = false;
         talking = false;
-        numHasPower = true;
+        numHasPower = false;
         squareSolved = false;
         hasKeyCard = false;
+        doorUnlocked = false;
     }
 
     // Update is called once per frame
