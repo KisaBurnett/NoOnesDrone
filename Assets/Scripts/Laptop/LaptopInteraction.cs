@@ -5,25 +5,11 @@ using UnityEngine.UI;
 
 public class LaptopInteraction : MonoBehaviour
 {
-    public Image laptopUI;
-    public Button lapGoBack;
+    public GameObject laptopUI;
 
     private void OnMouseDown()
     {
         EventManager.inMenu = true;
         laptopUI.gameObject.SetActive(true);
-        lapGoBack.gameObject.SetActive(true);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

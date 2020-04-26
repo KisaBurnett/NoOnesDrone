@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class NumbersGoBack : MonoBehaviour
 {
-    public Image numBG;
+    public GameObject magicNumUI;
     
     public void numbersBck()
     {
-        numBG.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
+        magicNumUI.gameObject.SetActive(false);
         EventManager.inMenu = false;
     }
 }

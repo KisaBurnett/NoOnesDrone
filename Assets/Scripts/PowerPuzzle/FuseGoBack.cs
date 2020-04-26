@@ -5,22 +5,11 @@ using UnityEngine.UI;
 
 public class FuseGoBack : MonoBehaviour
 {
-    public Image openDoor;
-    public Image closedDoor;
+    public GameObject fuseMenu;
 
     public void stepBack()
     {
-        if (EventManager.fuseOpen)
-        {
-            openDoor.gameObject.SetActive(false);
-        }
-        else
-        {
-            closedDoor.gameObject.SetActive(false);
-        }
-
-        this.gameObject.SetActive(false);
-
+        fuseMenu.gameObject.SetActive(false);
         EventManager.inMenu = false;
     }
 }
