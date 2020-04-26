@@ -5,11 +5,21 @@ using UnityEngine.UI;
 
 public class FuseboxInteraction : MonoBehaviour
 {
-    public GameObject fuseBox;
+    public GameObject fuseCl;
+    public GameObject fuseOp;
 
+    // When clicked, take player to appropriate UI, based
+    // on whether or not fusebox door is open.
     private void OnMouseDown()
     {
         EventManager.inMenu = true;
-        fuseBox.gameObject.SetActive(true);
+        if (EventManager.fuseOpen)
+        {
+            fuseOp.gameObject.SetActive(true);
+        }
+        else
+        {
+            fuseCl.gameObject.SetActive(true);
+        }
     }
 }

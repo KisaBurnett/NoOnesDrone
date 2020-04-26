@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class CrateLidOpener : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    // When the Magic Square puzzle has been solved, open
+    // the crate lid for player.
     void Update()
     {
         if (EventManager.squareSolved)

@@ -13,14 +13,16 @@ public class EventManager : MonoBehaviour
     public static bool hasKeyCard;
     public static bool squareSolved;
 
-    // Start is called before the first frame update
+    // Initialize variables that track player's progress.
+    // In beginning, player has done nothing, so all should be
+    // false.
     void Start()
     {
         inMenu = false;
         fuseOpen = false;
         laptopOn = false;
         talking = false;
-        numHasPower = false;
+        numHasPower = true;
         squareSolved = false;
         hasKeyCard = false;
     }

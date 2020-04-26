@@ -8,6 +8,9 @@ public class NumbersInteraction : MonoBehaviour
     public GameObject numbersOffUI;
     public GameObject numbersOnUI;
 
+    // On click, open appropriate UI based on whether or
+    // not the power puzzle has been solved. Tell EventManager
+    // player is currently in a menu to freeze camera movement.
     private void OnMouseDown()
     {
         if (EventManager.numHasPower == false)
