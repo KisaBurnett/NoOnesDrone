@@ -9,6 +9,7 @@ public class RoboGoBack : MonoBehaviour
     public Camera npcC;
 
     public GameObject robotUI;
+    public GameObject thisHereUI;
     
     public void goAwayFromRobot()
     {
@@ -17,5 +18,6 @@ public class RoboGoBack : MonoBehaviour
         mainC.gameObject.SetActive(true);
         npcC.gameObject.SetActive(false);
         robotUI.gameObject.SetActive(false);
+        thisHereUI.gameObject.SetActive(false);
     }
 }

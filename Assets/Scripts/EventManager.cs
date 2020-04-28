@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EventManager : MonoBehaviour
 {
     public static bool inMenu;
+    public static bool firstTalk;
     public static bool fuseOpen;
     public static bool laptopOn;
     public static bool talking;

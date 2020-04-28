@@ -9,7 +9,7 @@ public class PowerResetPuzzle : MonoBehaviour
     InputField entry02;
     InputField entry03;
     InputField entry04;
-    string winningCode = "8361";
+    string winningCode = "8196";
     string winCheck;
 
     // Grab the entry fields from the scene and assign them to variables.
