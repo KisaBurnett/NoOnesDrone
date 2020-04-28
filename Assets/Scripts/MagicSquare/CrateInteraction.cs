@@ -6,6 +6,7 @@ public class CrateInteraction : MonoBehaviour
 {
     public GameObject crateUI;
 
+    // Allows player to collect the key card from the crate.
     private void OnMouseDown()
     {
         if (EventManager.squareSolved)

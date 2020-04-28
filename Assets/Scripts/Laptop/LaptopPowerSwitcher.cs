@@ -9,6 +9,8 @@ public class LaptopPowerSwitcher : MonoBehaviour
     public GameObject lapUIOn;
     public GameObject lapUIOff;
     
+    // Changes the view and UI for the laptop when player powers
+    // on the laptop.
     public void PowerOn()
     {
         lappieOff.gameObject.SetActive(false);
