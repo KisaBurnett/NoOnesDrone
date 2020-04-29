@@ -16,10 +16,10 @@ public class EventManager : MonoBehaviour
     public static bool doorUnlocked;
     public static bool doorOpen;
     public static bool takeRobot;
+    public static bool lastChoiceMade;
 
     // Initialize variables that track player's progress.
-    // In beginning, player has done nothing, so all should be
-    // false.
+    // In beginning, player has done nothing, so all should be false.
     void Start()
     {
         inMenu = false;
@@ -32,11 +32,6 @@ public class EventManager : MonoBehaviour
         doorUnlocked = false;
         doorOpen = false;
         takeRobot = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        lastChoiceMade = false;
     }
 }

@@ -6,13 +6,14 @@ public class RobotBehavior : MonoBehaviour
 {
     Animator roboAnim;
 
-    // Start is called before the first frame update
+    // Initialize the variable referencing the robot's animator.
     void Start()
     {
         roboAnim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    // Animate robot appropriately according to whether or not the
+    // player is speaking to the robot.
     void FixedUpdate()
     {
         if (EventManager.talking)

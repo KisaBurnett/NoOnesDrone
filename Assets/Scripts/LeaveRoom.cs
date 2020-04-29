@@ -17,7 +17,8 @@ public class LeaveRoom : MonoBehaviour
     // allows player to leave and activates appropriate ending.
     private void OnMouseDown()
     {
-        if (EventManager.doorOpen)
+        if (EventManager.doorOpen &&
+            EventManager.talking == false)
         {
             if (EventManager.takeRobot)
             {

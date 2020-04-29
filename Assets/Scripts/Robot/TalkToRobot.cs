@@ -18,36 +18,34 @@ public class TalkToRobot : MonoBehaviour
     public GameObject spch08;
     public GameObject spch09;
 
+    // Display appropriate robot lines based on what player has
+    // accomplished thus far in the game.
     private void OnMouseDown()
     {
-        EventManager.talking = true;
-
-        main.gameObject.SetActive(false);
-        closeUp.gameObject.SetActive(true);
-        robUI.gameObject.SetActive(true);
-
-        if (EventManager.firstTalk == false)
+        if (EventManager.inMenu == false)
         {
-            spch01.gameObject.SetActive(true);
-            EventManager.firstTalk = true;
-        }
-        else
-        {
-            if (EventManager.fuseOpen == false)
+            EventManager.talking = true;
+
+            main.gameObject.SetActive(false);
+            closeUp.gameObject.SetActive(true);
+            robUI.gameObject.SetActive(true);
+
+            if (EventManager.firstTalk == false)
             {
-                spch02.gameObject.SetActive(true);
+                spch01.gameObject.SetActive(true);
+                EventManager.firstTalk = true;
             }
             else
             {
-                if (EventManager.laptopOn == false)
+                if (EventManager.fuseOpen == false)
                 {
-                    spch03.gameObject.SetActive(true);
+                    spch02.gameObject.SetActive(true);
                 }
                 else
                 {
                     if (EventManager.numHasPower == false)
                     {
-                        spch04.gameObject.SetActive(true);
+                        spch03.gameObject.SetActive(true);
                     }
                     else
                     {
@@ -63,12 +61,27 @@ public class TalkToRobot : MonoBehaviour
                             }
                             else
                             {
-                                spch07.gameObject.SetActive(true);
+                                if (EventManager.lastChoiceMade == false)
+                                {
+                                    spch07.gameObject.SetActive(true);
+                                }
+                                else
+                                {
+                                    if (EventManager.takeRobot)
+                                    {
+                                        spch08.gameObject.SetActive(true);
+                                    }
+                                    else
+                                    {
+                                        spch09.gameObject.SetActive(true);
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
+        
     }
 }

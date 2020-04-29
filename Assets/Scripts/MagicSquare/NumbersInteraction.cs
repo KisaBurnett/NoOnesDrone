@@ -13,12 +13,14 @@ public class NumbersInteraction : MonoBehaviour
     // player is currently in a menu to freeze camera movement.
     private void OnMouseDown()
     {
-        if (EventManager.numHasPower == false)
+        if (EventManager.numHasPower == false &&
+            EventManager.talking == false)
         {
             numbersOffUI.gameObject.SetActive(true);
             EventManager.inMenu = true;
         }
-        else
+        else if (EventManager.numHasPower &&
+            EventManager.talking == false)
         {
             numbersOnUI.gameObject.SetActive(true);
             EventManager.inMenu = true;
