@@ -14,13 +14,15 @@ public class NumbersInteraction : MonoBehaviour
     private void OnMouseDown()
     {
         if (EventManager.numHasPower == false &&
-            EventManager.talking == false)
+            EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             numbersOffUI.gameObject.SetActive(true);
             EventManager.inMenu = true;
         }
         else if (EventManager.numHasPower &&
-            EventManager.talking == false)
+            EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             numbersOnUI.gameObject.SetActive(true);
             EventManager.inMenu = true;

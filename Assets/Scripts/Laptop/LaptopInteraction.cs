@@ -10,7 +10,8 @@ public class LaptopInteraction : MonoBehaviour
     // When player clicks on laptop, open appropriate UI.
     private void OnMouseDown()
     {
-        if (EventManager.talking == false)
+        if (EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             EventManager.inMenu = true;
             laptopUI.gameObject.SetActive(true);

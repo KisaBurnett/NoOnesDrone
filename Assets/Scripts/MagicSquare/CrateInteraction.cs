@@ -10,7 +10,8 @@ public class CrateInteraction : MonoBehaviour
     private void OnMouseDown()
     {
         if (EventManager.squareSolved &&
-            EventManager.talking == false)
+            EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             EventManager.inMenu = true;
             crateUI.gameObject.SetActive(true);

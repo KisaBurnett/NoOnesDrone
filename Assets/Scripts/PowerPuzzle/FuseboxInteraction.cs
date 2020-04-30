@@ -12,7 +12,8 @@ public class FuseboxInteraction : MonoBehaviour
     // on whether or not fusebox door is open.
     private void OnMouseDown()
     {
-        if (EventManager.talking == false)
+        if (EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             EventManager.inMenu = true;
             if (EventManager.fuseOpen)

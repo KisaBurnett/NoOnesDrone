@@ -19,7 +19,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EventManager.inMenu == false)
+        if (EventManager.inMenu == false && EventManager.talking == false)
         {
             var horizontalDir = Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
             transform.Rotate(0, horizontalDir, 0);

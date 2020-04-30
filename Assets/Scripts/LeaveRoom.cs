@@ -18,7 +18,8 @@ public class LeaveRoom : MonoBehaviour
     private void OnMouseDown()
     {
         if (EventManager.doorOpen &&
-            EventManager.talking == false)
+            EventManager.talking == false &&
+            EventManager.inMenu == false)
         {
             if (EventManager.takeRobot)
             {
