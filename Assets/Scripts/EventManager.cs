@@ -34,4 +34,13 @@ public class EventManager : MonoBehaviour
         takeRobot = false;
         lastChoiceMade = false;
     }
+
+    // If player presses Escape key, quit the game.
+    private void Update()
+    {
+       if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

@@ -4932,6 +4932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521907697}
   - component: {fileID: 521907696}
+  - component: {fileID: 521907695}
   m_Layer: 0
   m_Name: EndSceneCam1
   m_TagString: Untagged
@@ -4939,6 +4940,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &521907695
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521907694}
+  m_Enabled: 1
 --- !u!20 &521907696
 Camera:
   m_ObjectHideFlags: 0
@@ -5620,6 +5629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601230308}
   - component: {fileID: 601230310}
+  - component: {fileID: 601230309}
   m_Layer: 0
   m_Name: EndSceneCam2
   m_TagString: Untagged
@@ -5641,6 +5651,14 @@ Transform:
   m_Father: {fileID: 2039013772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 77.86, z: 0}
+--- !u!81 &601230309
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601230307}
+  m_Enabled: 1
 --- !u!20 &601230310
 Camera:
   m_ObjectHideFlags: 0
@@ -10316,6 +10334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070182626}
   - component: {fileID: 1070182627}
+  - component: {fileID: 1070182628}
   m_Layer: 0
   m_Name: NPCCam
   m_TagString: Untagged
@@ -10380,6 +10399,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1070182628
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070182625}
+  m_Enabled: 1
 --- !u!1 &1076352422
 GameObject:
   m_ObjectHideFlags: 0
