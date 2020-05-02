@@ -7,6 +7,7 @@ public class ExitAccess : MonoBehaviour
     public ParticleSystem exitBlock;
     public GameObject exitRed;
     public GameObject exitGreen;
+    public AudioSource clickSound;
 
     // If player has collected the key card from the crate,
     // the red block disappears and the exit sign turns green.
@@ -16,10 +17,14 @@ public class ExitAccess : MonoBehaviour
         if (EventManager.hasKeyCard)
         {
             EventManager.doorUnlocked = true;
+
             exitBlock.gameObject.SetActive(false);
             exitRed.gameObject.SetActive(false);
             exitGreen.gameObject.SetActive(true);
+
             EventManager.doorOpen = true;
+
+            clickSound.Play();
         }
     }
 }

@@ -8,6 +8,8 @@ public class RoboGoBack : MonoBehaviour
     public Camera mainC;
     public Camera npcC;
 
+    public AudioSource robtSound;
+
     public GameObject robotUI;
     public GameObject thisHereUI;
 
@@ -23,9 +25,14 @@ public class RoboGoBack : MonoBehaviour
     {
         EventManager.talking = false;
 
+        // Stop the robot's SFX track.
+        robtSound.Stop();
+
+        // Switch cameras.
         mainC.gameObject.SetActive(true);
         npcC.gameObject.SetActive(false);
 
+        // Set dialog back to beginning if necessary.
         if (needsReset)
         {
             lastMsg.gameObject.SetActive(false);
@@ -34,6 +41,7 @@ public class RoboGoBack : MonoBehaviour
             thisBtn.gameObject.SetActive(false);
         }
 
+        // Switch off UI.
         robotUI.gameObject.SetActive(false);
         thisHereUI.gameObject.SetActive(false);
     }

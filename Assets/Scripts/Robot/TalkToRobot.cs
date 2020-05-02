@@ -7,7 +7,12 @@ public class TalkToRobot : MonoBehaviour
 {
     public Camera main;
     public Camera closeUp;
+
+    public AudioSource roboSound;
+
     public GameObject robUI;
+
+    // Dialog options.
     public GameObject spch01;
     public GameObject spch02;
     public GameObject spch03;
@@ -22,14 +27,22 @@ public class TalkToRobot : MonoBehaviour
     // accomplished thus far in the game.
     private void OnMouseDown()
     {
+        // Check to make sure this isn't an accidental click
+        // while in a menu.
         if (EventManager.inMenu == false)
         {
+            // Let EventManager know the player is talking to NPC.
             EventManager.talking = true;
 
+            // Switch cameras and bring up UI.
             main.gameObject.SetActive(false);
             closeUp.gameObject.SetActive(true);
             robUI.gameObject.SetActive(true);
+            
+            // Play robot SFX.
+            roboSound.Play();
 
+            // Bring up appropriate dialog, based on what player has done.
             if (EventManager.firstTalk == false)
             {
                 spch01.gameObject.SetActive(true);

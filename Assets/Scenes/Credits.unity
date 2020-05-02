@@ -509,10 +509,49 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8152458876440531423, guid: 60bc04d7582ae5245873bc6ff53a1630,
+        type: 3}
+      propertyPath: m_Text
+      value: "Laptop sound\r\n\"System Load\"\r\nZabuhailo of freesound.org\r\nfreesound.org/people/Zabuhailo/sounds/146957\nfreesound.org/people/Zabuhailo\n\r\r\nFusebox
+        Click On\r\n\"Button 04\"\r\nJarred Gibb of freesound.org\r\nfreesound.org/people/JarredGibb/sounds/219477\njarredgibb.wix.com/sound\r\n\nNumber
+        Puzzle Clicks\r\n\"Small Button Press\"\r\nNear201 of freesound.org\r\nfreesound.org/people/Near201/sounds/494041\nfreesound.org/people/Near201"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152458876500767825, guid: 60bc04d7582ae5245873bc6ff53a1630,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Robot sound
+
+        "MinoltaV300Zoom2"
+
+        Kwahmah_02 of freesound.org
+
+        freesound.org/people/kwahmah_02/sounds/264102
+
+        freesound.org/people/kwahmah_02
+
+
+
+        Outdoor
+        sounds
+
+        "Spring Birds 2019 (processed loop)"
+
+        hargissssound
+        of freesound.org
+
+        freesound.org/people/hargissssound/sounds/471891/
+
+        freesound.org/people/hargissssound'
+      objectReference: {fileID: 0}
     - target: {fileID: 8152458876534104947, guid: 60bc04d7582ae5245873bc6ff53a1630,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152458876596764435, guid: 60bc04d7582ae5245873bc6ff53a1630,
+        type: 3}
+      propertyPath: m_Text
+      value: BACK
       objectReference: {fileID: 0}
     - target: {fileID: 8152458876878215931, guid: 60bc04d7582ae5245873bc6ff53a1630,
         type: 3}

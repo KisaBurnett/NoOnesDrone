@@ -46,6 +46,9 @@ public class MagicSquareTracker : MonoBehaviour
     int diag2;
     int winningSum = 15;
 
+    AudioSource endSFX;
+
+    bool playedSound;
 
     void Start()
     {
@@ -86,6 +89,10 @@ public class MagicSquareTracker : MonoBehaviour
         sumCol2 = GameObject.Find("col2").GetComponent<Text>();
         sumCol3 = GameObject.Find("col3").GetComponent<Text>();
         sumDiag2 = GameObject.Find("dia2").GetComponent<Text>();
+
+        endSFX = GameObject.Find("FuseOnSFX").GetComponent<AudioSource>();
+
+        playedSound = false;
     }
 
 
@@ -131,6 +138,12 @@ public class MagicSquareTracker : MonoBehaviour
             num07.interactable = false;
             num08.interactable = false;
             num09.interactable = false;
+
+            if (playedSound == false)
+            {
+                endSFX.Play();
+                playedSound = true;
+            }
 
             // Let the EventManager know the puzzle has been solved.
             EventManager.squareSolved = true;
